@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio Bob Harterink</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500;700&display=swap');
+  </style>
+</head>
+
+<body>
+  <div id="myNav" class="overlay">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <div class="overlay-content">
+      <a href="#shlian" onclick="closeNav()">Shlian</a>
+      <a href="#" onclick="closeNav()">.</a>
+      <a href="#" onclick="closeNav()">.</a>
+      <a href="#" onclick="closeNav()">.</a>
+      <a href="#." onclick="closeNav()">.</a>
+    </div>
+  </div>
+
+  <span class="menubutton" style="font-size:40px;cursor:pointer" onclick="openNav()">&#9776;</span>
+  <div class="canvas" id="shlian">
+    <canvas class="shilian"></canvas>
+  </div>
+      <div class="canvas" id="imageshlian">
+        <div class="w3-content w3-display-container">
+            <img class="mySlides" src="/shlian2.jpg">
+            <img class="mySlides" src="/shlian1.jpg">
+            <img class="mySlides" src="/shlian3.jpg">
+            <img class="mySlides" src="/shlian4.jpg">
+            <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+            <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+        </div>
+    </div>
+  <div class="canvas" id="textshlian">
+    <h2 id="titlegeo">Uitleg</h2>
+    <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Praesent tristique tincidunt ex, non auctor orci hendrerit nec. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Vivamus hendrerit nulla quis justo finibus, vel rhoncus mi laoreet.</h3>
+  </div>
+
+<!--   <div class="canvas" id="vaas">
+    <canvas class="vaas"></canvas>
+  </div>
+ -->
+  <!-- <div class="canvas" id="imagevaas">
+    <div class="w3-content w3-display-container">
+        <img class="mySlides2" src="/vaas1.jpg">
+        <img class="mySlides2" src="/vaas2.jpg">
+        <img class="mySlides2" src="/vaas3.jpg">
+        <img class="mySlides2" src="/vaas4.jpg">
+        <button class="w3-button w3-black w3-display-left" onclick="vaasveder(-1)">&#10094;</button>
+        <button class="w3-button w3-black w3-display-right" onclick="vaasverder(1)">&#10095;</button>
+    </div>
+  </div>
+
+  <div class="canvas" id="textvaas">
+    <h2>Houten Vaas</h2>
+    <h3>De houten vaas is gemaakt uit MDF. Dit is een project dat een vervolg is op de geometrische golfen. De houten
+      stukken zijn uitgesneden door een laser cut apparaat. De vaas bestaat uit 3 onderdelen. De ronde onderkant met
+      daaruit stukken gesneden waardoor de zei vlakken erin gestoken kunnen worden. En de bovenste cirkel met een gat in
+      het midden zodat er een glazen vaas in past. Beide cirkels zijn er schuine uitsnede gemaakt waar de vlakken hout
+      ingeschoven kunnen worden. Hierdoor krijgt het een effect alsof het een geheel is. Dit is een van de prototype
+      vazen. Er zijn meerdere formaten, stijlen en kleuren.</h3>
+  </div>
+
+  <div class="canvas" id="vrouw">
+    <canvas class="vrouw"></canvas>
+  </div>
+
+  <div class="canvas" id="imagevrouw">
+    <div class="w3-content w3-display-container">
+        <img class="mySlides3" src="/vrouw1.jpg">
+        <img class="mySlides3" src="/vrouw2.jpg">
+        <img class="mySlides3" src="/vrouw3.jpg">
+        <button class="w3-button w3-black w3-display-left" onclick="vrouwverder(-1)">&#10094;</button>
+        <button class="w3-button w3-black w3-display-right" onclick="vrouwverder(1)">&#10095;</button>
+    </div>
+  </div>
+
+  <div class="canvas" id="textvrouw">
+    <h2>Frauw</h2>
+    <h3>Frauw is een project waar ik al langer aan bezig ben. Het is een grafisch project waarbij ik een aantal vrouwen
+      heb willen laten zien aan de hand van verticale lijnen en in maar een beperkt aantal kleuren. Het project startte
+      met foto’s van het internet die ik veranderde in deze stijl van afbeeldingen. Nu probeer ik zelf de foto’s te
+      nemen om zo een interessante compositie te creëren. Dit project heb ik de naam FRAUW gegeven. Deze posters komen
+      binnenkort online te staan op de website. Nu hang ik de posters af en toe op in de het centrum van Antwerpen.
+    </h3>
+  </div>
+
+  <div class="canvas" id="wit">
+    <canvas class="schilder"></canvas>
+  </div>
+
+  <div class="canvas" id="imagewit">
+    <div class="w3-content w3-display-container">
+        <img class="mySlides4" src="/object1.jpg">
+        <img class="mySlides4" src="/object2.jpg">
+        <img class="mySlides4" src="/object3.jpg">
+        <img class="mySlides4" src="/object4.jpg">
+        <button class="w3-button w3-black w3-display-left" onclick="objectverder(-1)">&#10094;</button>
+        <button class="w3-button w3-black w3-display-right" onclick="objectverder(1)">&#10095;</button>
+    </div>
+  </div>
+
+  <div class="canvas" id="textwit">
+    <h2>Object</h2>
+    <h3>Dit figuur is de laatste ontwikkeling die is gemaakt met een laser cut apparaat. Dit is een project dat in de
+      kinderschoenen staat, hieruit kunnen nog verschillende vormen en objecten gemaakt worden. Het is een iteratie op
+      een werk van Tim de Wit die MDF-planken heeft uitgesneden tot een verticaal op elkaar stapelde tafel. Dit is het
+      eerste object dat ik heb gemaakt. Uiteindelijk zou ik er ook een vaasvorm van willen maken. Alle laser cut
+      projecten zijn vervaardigd met Illustrator.</h3>
+  </div>
+  <div></div>
+  <div class="canvas" id="textover">
+    <h2 id="inverttitle">Over</h2>
+    <h3 id="inverttext">Dit is een portfolio website die ik zelf heb gemaakt met behulp van verschillende codeer talen.
+      De vormen zijn gemaakt in Blender, en tot leven gebracht met Three.js. De projecten zijn werken uit de afgelopen
+      anderhalf jaar waar ik me mee bezig heb gehouden. Dit zijn de hoofdonderwerpen waar ik me op heb gefocust. Ik wil
+      mij focussen op het maken van objecten aan de hand van een 2D programma als illustrator, waarnaar ik vervolgens
+      dit in een 3D programma als Blender tot een object maak. En vervolgens het in het echt ga vervaardigen.
+      <br>
+      <br>
+      Bob Harterink
+      <br>
+      Grafische vormgeving BA3
+    </h3>
+  </div> -->
+  <script type="module" src="/src/main.js"></script>
+
+
+  <script>
+    function openNav() {
+      document.getElementById("myNav").style.height = "100%";
+    }
+
+    function closeNav() {
+      document.getElementById("myNav").style.height = "0%";
+    }
+  </script>
+
+  <script>
+    var slideIndex = 1;
+    showDivs(slideIndex);
+
+    function plusDivs(n) {
+      showDivs(slideIndex += n);
+    }
+
+    function showDivs(n) {
+      var i;
+      var x = document.getElementsByClassName("mySlides");
+      if (n > x.length) { slideIndex = 1 }
+      if (n < 1) { slideIndex = x.length }
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+      }
+      x[slideIndex - 1].style.display = "block";
+    }
+  </script>
+
+<!-- <script>
+  var slideIndex2 = 1;
+  showDivs2(slideIndex2);
+
+  function vaasverder(n) {
+    showDivs2(slideIndex2 += n);
+  }
+
+  function showDivs2(n) {
+    var i;
+    var x = document.getElementsByClassName("mySlides2");
+    if (n > x.length) { slideIndex2 = 1 }
+    if (n < 1) { slideIndex2 = x.length }
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";
+    }
+    x[slideIndex2 - 1].style.display = "block";
+  }
+</script>
+
+<script>
+  var slideIndex3 = 1;
+  showDivs3(slideIndex3);
+
+  function vrouwverder(n) {
+    showDivs3(slideIndex3 += n);
+  }
+
+  function showDivs3(n) {
+    var i;
+    var x = document.getElementsByClassName("mySlides3");
+    if (n > x.length) { slideIndex3 = 1 }
+    if (n < 1) { slideIndex3 = x.length }
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";
+    }
+    x[slideIndex3 - 1].style.display = "block";
+  }
+</script>
+
+<script>
+  var slideIndex4 = 1;
+  showDivs4(slideIndex4);
+
+  function objectverder(n) {
+    showDivs4(slideIndex4 += n);
+  }
+
+  function showDivs4(n) {
+    var i;
+    var x = document.getElementsByClassName("mySlides4");
+    if (n > x.length) { slideIndex4 = 1 }
+    if (n < 1) { slideIndex4 = x.length }
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";
+    }
+    x[slideIndex4 - 1].style.display = "block";
+  }
+</script> -->
+
+
+
+<!--   <script>
+    const element8 = document.querySelector('#textover');
+    const element9 = document.querySelector('.menubutton');
+    const observer6 = new IntersectionObserver(entries => {
+      element9.classList.toggle('animation5', entries[0].isIntersecting);
+    }, {
+      rootMargin: "-100px",
+      delay: 1000,
+    }
+    );
+    observer6.observe(element8);
+  </script> -->
+</body>
+
+</html>
